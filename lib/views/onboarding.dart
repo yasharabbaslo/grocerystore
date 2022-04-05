@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:grocery_store/consts/buttons.dart';
 import 'package:grocery_store/consts/colors.dart';
 import 'package:grocery_store/data/data.dart';
+import 'package:grocery_store/views/auth/login.dart';
 import 'package:grocery_store/views/splashscreen.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -113,8 +114,7 @@ class _OnBoarding1State extends State<OnBoarding1> {
                           if (_page == onBoardingItems.length - 1) {
                             Navigator.of(context).pushReplacement(
                                 MaterialPageRoute(
-                                    builder: (context) =>
-                                        const SplashScreen()));
+                                    builder: (context) => const LoginView()));
                           } else {
                             _pageController.animateToPage(_page + 1,
                                 duration: const Duration(milliseconds: 500),

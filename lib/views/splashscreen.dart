@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_store/consts/colors.dart';
-import 'package:grocery_store/views/onboarding/onboarding1.dart';
+import 'package:grocery_store/views/onboarding.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -43,10 +43,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 )
               ],
             ),
-            const Text(
-              'Tradly',
-              style: TextStyle(color: primaryColor, fontSize: 40),
-            ),
+            Text('Tradly', style: Theme.of(context).textTheme.headline3),
           ],
         ),
       ),
